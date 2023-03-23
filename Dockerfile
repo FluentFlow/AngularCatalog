@@ -1,5 +1,5 @@
 # build
-FROM node:19-alpine AS build
+FROM node:16.19.1-bullseye-slim AS build
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
